@@ -1,0 +1,30 @@
+<section class="section--even bg--secondary space--sm">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-8 col-sm-offset-2 text-center">
+                <h1>I'm a...</h1>
+                <p class="lead">
+                    <strong>Travel lover</strong>, <em>Scandinavia fan</em>, Dutchie, <strong>Front end Developer</strong>, Gym/CrossFit addict, <strong>INFP</strong>, <span id="age"></span> year old, <strong>Photo taker</strong>, <em>Nature lover</em>, Hiker, Autodidact, <em>Dreamer</em>, <strong>Nerd</strong>...
+                </h3>
+            </div>
+        </div>
+        <!--end of row-->
+    </div>
+    <!--end of container-->
+	<script>
+		function getAge(dateString) {
+		    var today = new Date();
+		    var birthDate = new Date(dateString);
+		    var age = today.getFullYear() - birthDate.getFullYear();
+		    var m = today.getMonth() - birthDate.getMonth();
+		    if (m < 0 || (m === 0 && today.getDate() < birthDate.getDate())) {
+		        age--;
+		    }
+		    return age;
+		}
+
+		document.getElementById('age').innerHTML = getAge("1984/02/17");
+	</script>
+
+
+</section>

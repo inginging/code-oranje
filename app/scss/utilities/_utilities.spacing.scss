@@ -1,0 +1,13 @@
+$spacing-unit: 24px;
+
+.u-margin-bottom {
+	margin-bottom: $spacing-unit !important;
+}
+
+.u-margin-bottom-small {
+	margin-bottom: $spacing-unit / 1.5 !important;
+} 
+
+.u-margin-bottom-huge {
+	margin-bottom: $spacing-unit * 2 !important;
+}
